@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'badabb';
+    src: url("./../font/badabb.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body {
+    background-color: black;
+    margin: 0 7vw;
+}
+
+p {
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    font-family: 'badabb';
+    text-decoration: none;
+}
+
+
+/* -------------------- Nav ------------------ */
+
+.logo {
+    width: 7vw;
+    height: auto;
+}
+
+.logoProfil {
+    width: 20%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.compte {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(14vw + 20px);
+}
+
+.primary {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(21vw + 40px);
+}
+
+
+/* -------------------- Main ------------------ */
+
+#main {
+    width: 100%;
+    height: 80vh;
+    background-image: url("./../img/bg.png");
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bouton-smash {
+    position: relative;
+    width: calc(28vw + 60px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+#bubble_cloud2 {
+    width: 100%;
+    height: auto;
+}
+
+.cls-2 {
+    fill: #FDC324;
+}
+
+.btnTxt {
+    position: absolute;
+    text-align: center;
+    padding: 0 0 50px 50px;
+}
+
+.btnTxt p {
+    font-size: 5em;
+    color: black;
+}
+
+#btnSub {
+    font-family: 'badabb';
+    font-size: 5em;
+}
+
+#btnSub1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+}

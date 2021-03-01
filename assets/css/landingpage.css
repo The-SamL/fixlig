@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "BADABB";
+    src: url("../font/BADABB.TTF")
+}
+
+.headList {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: "BADABB";
+    font-size: 26pt;
+    margin-top: 20px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profilePic {
+    height: 44px;
+    width: auto;
+}
+
+h1 {
+    font-family: "BADABB";
+    font-size: 130px;
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 28pt;
+}
+
+#mainPage {
+    background-image: url("../img/bg.png");
+}
+
+#bulle {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.start {
+    font-family: "BADABB";
+    font-size: 24pt;
+    color: black;
+    cursor: pointer;
+}
