@@ -4,10 +4,13 @@
     <html lang='fr'>
     <meta charset="utf-8" />
     <title>fixlig-accueil</title>
+    <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/landingpage.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap">
+    <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.ico" />
 </head>
 
 <body>
@@ -29,51 +32,133 @@
     </div>
 
     <div id="mainPage">
-        <h1 class="whiteTitle">C'EST TOI LE HEROS !</h1>
-        <div id="bulle">
-            <img src="./assets/img/DialogBubble.png" alt="">
-            <p>Réveillez le héros qui est en vous ! <br> Sauvez vos proches et l’environnement<br> en réparant leurs appareils électroniques en panne et<br> affrontez vos amis dans ce défi. </p>
-        </div>
-        <a class="startBtn" href="">commencer <img class="startBuble" src="./assets/img/bulle_1.png" alt=""></a>
+        <h1 class="whiteTitle mainTitle">C'EST TOI LE HEROS !</h1>
+        <p id="bulleTxt">Réveille le héros qui est en toi ! Sauve tes proches et l’environnement en réparant leurs appareils électroniques en panne et affronte tes amis dans ce défi. </p>
+        <a class="startTxt" href="#">
+           Commencer
+        </a>
+        <img id="captainPc" src="./assets/img/CaptainPC.png" alt="Captain PC">
     </div>
 
     <div id="infosPage">
-        <h2 class="whiteText">LIBEREZ VOS PROCHES</h2>
-        <p class="whiteText">Gagnez des points en aidant<br> vos proches qui ont des<br> problèmes informatiques avec<br> leurs appareils.</p>
-
-        <div class="whiteBckgColor">
-            <h2>Sauvez l’environnement</h2>
-            <p>En aidant vos proches, vous allongez la<br> durée de vie de leurs appareils. Ce<br> faisant, vous vous placez à contre<br> courant de la production massive<br> d’appareils neufs, coûteuse pour<br> l’environnement.</p>
-            <h2>Le concept</h2>
-
-            <div class="steps">
-                <ul>
-                    <li><img class="vignette" src="./assets/img/contourVignette.png" alt="illustration"> Etape 1</li>
-                    <li><img class="vignette" src="./assets/img/contourVignette.png" alt="illustration"> Etape 2</li>
-                    <li><img class="vignette" src="./assets/img/contourVignette.png" alt="illustration"> Etape 3</li>
-                </ul>
+        <div class="contentWrapper rowWrapper">
+            <div class="contentItem2">
+                <img class="imgHands" src="./assets/img/handShake.png" alt="">
             </div>
+            <div class="contentItem1">
+                <h2 class="whiteText">LIBERE TES PROCHES</h2>
+                <p class="whiteText">Gagne des points en aidant tes proches qui ont des problèmes informatiques avec leurs appareils.</p>
+            </div>
+        </div>
+        <div class="whiteBckgColor">
+            <div class="contentWrapper rowWrapper">
+                <div class="contentItem1">
+                    <h2>Sauve l’environnement</h2>
+                    <p>En aidant tes proches, tu allonge la<br> durée de vie de leurs appareils. Ce<br> faisant, tu te places à contre<br> courant de la production massive<br> d’appareils neufs, coûteuse pour<br> l’environnement.</p>
+                </div>
+                <div class="contentItem2">
+                    <img src="./assets/img/leaf.png" alt="feuille">
+                </div>
+            </div>
+            <div class="contentWrapper columnWrapper">
+                <h2 id="conceptTitle">Le concept</h2>
+                <div class="contentWrapper">
+                    <div class="contentItem2">
+                        <img class="vignette" src="./assets/img/contourVignette.png" alt="illustration">
+                        <p>Etape 1</p>
+                    </div>
+                    <div class="contentItem2">
+                        <img class="vignette" src="./assets/img/contourVignette.png" alt="illustration">
+                        <p>Etape 2</p>
+                    </div>
+                    <div class="contentItem2">
+                        <img class="vignette" src="./assets/img/contourVignette.png" alt="illustration">
+                        <p>Etape 3</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="chiffres">
                 <h2 class="whiteTitle">quelques chiffres</h2>
                 <ol class="liChiffres">
                     <li>
+                        <img class="imgChiffre1" src="./assets/img/chiffre_Co2.png" alt="illustration CO2">
                         <h2 class="whiteTitle">12t</h2>
                         <p class="whiteText">Co2<br>économisé</p>
                     </li>
                     <li>
+                        <img class="imgChiffre2" src="./assets/img/chiffre_Hero.png" alt="illustration héros">
                         <h2 class="whiteTitle">2846</h2>
                         <p class="whiteText">Héros</p>
                     </li>
                     <li>
+                        <img class="imgChiffre3" src="./assets/img/chiffreOrdi.png" alt="illustration ordinateur">
                         <h2 class="whiteTitle">1M</h2>
                         <p class="whiteText">Appareils<br>sauvés</p>
                     </li>
                 </ol>
             </div>
+            <div class="FAQ">
+                <h2 class="FAQfaq">FAQ</h2>
+                <ol class="FAQTitle">
+                    <li>
+                        <button><p>Qu’est-ce que FixLig ?</p></button>
+                        <ol class="FAQText">
+                            <li>
+                                <p>Fixlig est une communauté d’amateurs qui réparent ou optimisent<br> les outils informatiques de leurs proches. Véritables héros, ils<br> contribuent ainsi à l’allongement de la durée de vie de ces<br> appareils, et donc
+                                    à la lutte contre les désastres sociaux et<br> environnementaux provoqués par la production massive d’appareils<br> neufs.<br><br>Fixlig vous permet de défier tes amis pour savoir qui sera le<br> meilleur réparateur
+                                    de ton entourage. tu gagnes des points<br> quand tu aides tes proches.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button><p>Comment gagner des points ?</p></button>
+                        <ol class="FAQText">
+                            <li>
+                                <p>Chaque fois que vous arrivez à résoudre un problème informatique<br> de l’un de vos proches, vous gagnez un point. </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button><p>Comment confirmer que j’ai aidé quelqu’un ?</p></button>
+                        <ol class="FAQText">
+                            <li>
+                                <p>Je signale à la plateforme que j’ai effectué une tâche.<br>Je renseigne l’adresse email ou le numéro de téléphone mobile de la personne que j’ai aidé.<br>Elle revra un lien cliquable pour confirmer qu’elle a bénéficié de
+                                    mon aide.
+                                    <br>Dès que le bénéficiaire clique sur le lien, mon intervention est<br>validée.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button><p>Comment affronter ses amis ?</p></button>
+                        <ol class="FAQText">
+                            <li>
+                                <p>Vous pourrez ajouter vos amis à votre réseau afin de les affronter<br>pour savoir lequel d’entre vous sera le meilleur fixer. Chaque mois,<br>le meilleur recevra le badge de héros du mois.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button><p>Qu’est-ce que le héros du mois ?</p></button>
+                        <ol class="FAQText">
+                            <li>
+                                <p>Le badge de héros du mois sera attribué à la personne qui aura<br>aidé le plus de proches, c’est-à-dire qui aura reçu le plus de points.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button><p>Y a-t-il d’autres badges à obtenir ?</p></button>
+                        <ol class="FAQText">
+                            <li>
+                                <p>Oui. Il existe plusieurs badges selon les services que vous avez<br>effectués.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
         </div>
-
     </div>
-
 </body>
 
 </html>

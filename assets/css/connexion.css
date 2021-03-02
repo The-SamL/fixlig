@@ -1,0 +1,173 @@
+.connecInscription {
+    background-image: url("../img/bg2.png");
+    margin: 120px 7vw 0 7vw;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+
+/* --------------------------------------------------------Boutons Login / Créer un compte------------------------------------------------ */
+
+.btnLogin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login {
+    color: black;
+    padding: 15px;
+}
+
+.loginR {
+    color: #A81916;
+    padding: 15px;
+}
+
+
+/* --------------------------------------------------------Logo FIXLIG ROUGE------------------------------------------------ */
+
+.logoConnex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoLogin {
+    width: 14vw;
+    height: auto;
+}
+
+
+/* --------------------------------------------------------Form Connexion------------------------------------------------ */
+
+.connexion {
+    width: 70%;
+    margin: auto;
+}
+
+.groupeLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.labelLogin {
+    font-family: "BADABB";
+    font-size: 3em;
+    padding: 10px 50px;
+}
+
+.mdpOubl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mdp {
+    color: black;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+}
+
+.input {
+    height: 4em;
+    padding: 0 10px;
+    margin: 0 0 5px 20px;
+    background-color: white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.input input {
+    width: 100%;
+    height: 4em;
+    border: none;
+    outline: none;
+    padding: 6px 0 8px 5px;
+    font-size: 14px;
+    color: black;
+    background-color: transparent;
+}
+
+.input.right {
+    -moz-transform: skew(-15deg, 0);
+    -ms-transform: skew(-15deg, 0);
+    -webkit-transform: skew(-15deg, 0);
+    transform: skew(-15deg, 0);
+}
+
+.input.right input {
+    -moz-transform: skew(15deg, 0);
+    -ms-transform: skew(15deg, 0);
+    -webkit-transform: skew(15deg, 0);
+    transform: skew(15deg, 0);
+}
+
+::placeholder {
+    padding: 10px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+/* --------------------------------------------------------Form Inscription------------------------------------------------ */
+
+.inscription {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.partie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnInText p {
+    font-family: 'badabb';
+    font-size: 2.5em;
+}
+
+.btnInText {
+    position: absolute;
+    text-align: center;
+    padding: 5px 20px 30px 35px;
+}
+
+
+/* --------------------------------------------------------Bouton connexion------------------------------------------------ */
+
+.btnConnexion {
+    position: relative;
+    width: calc(14vw + 30px);
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+#bubbleConnexion {
+    width: 100%;
+    height: auto;
+}
+
+.btnConText {
+    position: absolute;
+    text-align: center;
+    padding: 5px 20px 30px 35px;
+}
+
+.btnConText p {
+    font-family: 'badabb';
+    font-size: 3em;
+}

@@ -3,32 +3,8 @@
     src: url("../font/BADABB.TTF")
 }
 
-.headList {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    font-family: "BADABB";
-    font-size: 26pt;
-    margin-top: 20px;
-}
-
-#header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.profilePic {
-    height: 44px;
-    width: auto;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 2em;
+body {
+    overflow-x: hidden;
 }
 
 h1 {
@@ -51,32 +27,108 @@ p {
     -webkit-text-stroke: 0.5px black;
     color: white;
     letter-spacing: 3px;
-    font-size: 5em;
 }
 
-.whiteText {
-    color: white;
+
+/* -------------------------- Zone accueil -------------------------- */
+
+.mainTitle {
+    font-size: 7em;
+    transition: 0.3s ease-in-out;
 }
 
 #mainPage {
-    background-image: url("../img/bg.png");
+    background-image: url("./../img/bg.png");
     margin: 120px 7vw 0 7vw;
     border-radius: 15px;
-    padding: 30px;
-}
-
-#bulle {
-    font-family: 'Architects Daughter', cursive;
-    width: 100%;
-    display: flex;
+    padding: 100px 50px;
+    z-index: 0;
     position: relative;
 }
 
-.startBtn {
+#bulleTxt {
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    box-sizing: content-box;
+    line-height: 1;
+    background: url(./../img/dialogBulle.svg);
+    width: 50%;
+    padding: 18% 6% 6% 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* .startBtn {
+    position: absolute;
+    border: green 2px solid;
+    left: 20%;
+    width: 50px;
+    height: 50px;
     font-family: "BADABB";
     font-size: 20px;
     color: black;
-    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: content-box;
+    line-height: 1;
+    background: url(./../img/bulle_1.png);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#captainPc {
+    position: absolute;
+    top: 0;
+    right: -18vw;
+    height: auto;
+    width: 35vw;
+}
+
+
+/* -------------------------- Zone Infos -------------------------- */
+
+.contentWrapper {
+    margin: 7vw;
+    display: flex;
+}
+
+.rowWrapper {
+    flex-direction: row;
+}
+
+.columnWrapper {
+    flex-direction: column;
+}
+
+.contentItem1 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contentItem2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conceptTitle {
+    text-align: center;
 }
 
 .whiteBckgColor {
@@ -96,10 +148,86 @@ p {
 
 .chiffres {
     background-image: url("../img/bg-danger.png");
+    height: 735px;
 }
 
 .liChiffres {
     display: flex;
     justify-content: space-around;
     list-style: none;
+}
+
+
+/* -------------------------- Zone FAQ -------------------------- */
+
+
+/*faut faire dérouler ça mais j'ai trop la flemme de chercher*/
+
+.FAQfaq {
+    text-align: center;
+}
+
+.FAQText {
+    list-style: none;
+    font-size: 10px;
+    text-align: left;
+}
+
+.FAQTitle {
+    list-style: none;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* -------------------------- Media queries -------------------------- */
+
+
+/* --- Format Notebook --- */
+
+@media all and (max-width: 1250px) {
+    .mainTitle {
+        font-size: 5em;
+        transition: 0.3s ease-in-out;
+    }
+    #bulleTxt {
+        font-size: 1.2em;
+        padding: 20% 6% 6% 6%;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+/* --- Format Tablette --- */
+
+@media all and (max-width: 870px) {
+    .mainTitle {
+        font-size: 3em;
+        transition: 0.3s ease-in-out;
+    }
+    #bulleTxt {
+        font-size: 1em;
+        width: 70%;
+        padding: 22% 7% 7% 7%;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+/* --- Format Smartphone --- */
+
+@media all and (max-width: 600px) {
+    .mainTitle {
+        font-size: 2.em;
+        transition: 0.3s ease-in-out;
+    }
+    #bulleTxt {
+        font-size: 1em;
+        width: 80%;
+        padding: 35% 10% 10% 10%;
+        transition: 0.3s ease-in-out;
+    }
 }

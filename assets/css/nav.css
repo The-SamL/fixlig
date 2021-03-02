@@ -1,0 +1,68 @@
+/* -------------------- Nav ------------------ */
+
+.logo {
+    width: 14vw;
+    height: auto;
+}
+
+.logoProfil {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 7vw;
+    width: -webkit-fill-available;
+    z-index: 10;
+}
+
+.compte {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(14vw + 20px);
+}
+
+.bckgProfil {
+    background-image: url("../img/bgLogoProfil.png");
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    width: 4vw;
+    height: 4vw;
+}
+
+.navButton {
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton2 {
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(28vw + 60px);
+}
+
+.whiteText {
+    color: white;
+}
