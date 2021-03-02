@@ -111,6 +111,10 @@ p {
     flex-direction: column;
 }
 
+.fullWidth {
+    width: -webkit-fill-available;
+}
+
 .contentItem1 {
     flex: 2;
     display: flex;
@@ -127,7 +131,7 @@ p {
     align-items: center;
 }
 
-#conceptTitle {
+.centerTitle {
     text-align: center;
 }
 
@@ -147,8 +151,19 @@ p {
 }
 
 .chiffres {
-    background-image: url("../img/bg-danger.png");
-    height: 735px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vw;
+    z-index: 1;
+}
+
+.chiffresBg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    z-index: -1;
 }
 
 .liChiffres {
