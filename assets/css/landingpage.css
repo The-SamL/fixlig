@@ -7,28 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    font-family: "BADABB";
-    margin: 0;
-}
-
-h2 {
-    font-family: "BADABB";
-    font-size: 35px;
-    letter-spacing: 6px;
-}
-
-p {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 2em;
-}
-
-.whiteTitle {
-    -webkit-text-stroke: 0.5px black;
-    color: white;
-    letter-spacing: 3px;
-}
-
 
 /* -------------------------- Zone accueil -------------------------- */
 
@@ -175,26 +153,61 @@ p {
 
 /* -------------------------- Zone FAQ -------------------------- */
 
-
-/*faut faire dérouler ça mais j'ai trop la flemme de chercher*/
-
-.FAQfaq {
-    text-align: center;
+.FAQ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.FAQText {
-    list-style: none;
-    font-size: 10px;
-    text-align: left;
+.accordionWrapper {
+    width: 84vw;
+    height: auto;
+    margin: 20px 0;
 }
 
-.FAQTitle {
-    list-style: none;
-    text-align: center;
-}
-
-button {
+.accordion {
+    background-color: transparent;
+    color: black;
     cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Architects Daughter', cursive;
+    -moz-transform: skew(-15deg, 0);
+    -ms-transform: skew(-15deg, 0);
+    -webkit-transform: skew(-15deg, 0);
+    transform: skew(-15deg, 0);
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion p,
+.accordion i {
+    -moz-transform: skew(15deg, 0);
+    -ms-transform: skew(15deg, 0);
+    -webkit-transform: skew(15deg, 0);
+    transform: skew(15deg, 0);
+}
+
+.active,
+.accordion:hover {
+    background-color: #fdc324;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 

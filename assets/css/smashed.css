@@ -1,0 +1,12 @@
+#smashedPage {
+    background-image: url("./../img/bg3.png");
+    margin: 120px 7vw 0 7vw;
+    border-radius: 15px;
+    padding: 30px;
+    z-index: 0;
+    text-align: center;
+}
+
+.messageConf {
+    margin: 90px 0px;
+}

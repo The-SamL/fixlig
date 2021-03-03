@@ -60,7 +60,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: calc(28vw + 60px);
+    width: calc(35vw + 80px);
 }
 
 .whiteText {

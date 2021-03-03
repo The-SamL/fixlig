@@ -1,0 +1,8 @@
+#leaguePage {
+    background-image: url("./../img/bg.png");
+    margin: 120px 7vw 0 7vw;
+    border-radius: 15px;
+    padding: 100px 50px;
+    z-index: 0;
+    position: relative;
+}

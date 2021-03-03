@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap">
     <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
 </head>
 
 <body>
 
     <div class="navbar">
         <div class="primary">
-            <a class="navButton2" href="./index.html"><img class="logo" src="./assets/img/3.png"></a>
+            <a class="navButton2" href="#"><img class="logo" src="./assets/img/3.png"></a>
             <a class="whiteText navButton" href="#">A Propos</a>
+            <a class="whiteText navButton" href="#">Smash</a>
             <a class="whiteText navButton" href="#">La Ligue</a>
         </div>
         <div class="compte">
@@ -35,7 +38,7 @@
         <h1 class="whiteTitle mainTitle">C'EST TOI LE HEROS !</h1>
         <p id="bulleTxt">Réveille le héros qui est en toi ! Sauve tes proches et l’environnement en réparant leurs appareils électroniques en panne et affronte tes amis dans ce défi. </p>
         <a class="startTxt" href="#">
-           Commencer
+            Commencer
         </a>
         <img id="captainPc" src="./assets/img/CaptainPC.png" alt="Captain PC">
     </div>
@@ -101,65 +104,65 @@
                     </ol>
                 </div>
             </div>
+
             <div class="FAQ">
                 <h2 class="FAQfaq">FAQ</h2>
-                <ol class="FAQTitle">
-                    <li>
-                        <button><p>Qu’est-ce que FixLig ?</p></button>
-                        <ol class="FAQText">
-                            <li>
-                                <p>Fixlig est une communauté d’amateurs qui réparent ou optimisent<br> les outils informatiques de leurs proches. Véritables héros, ils<br> contribuent ainsi à l’allongement de la durée de vie de ces<br> appareils, et donc
-                                    à la lutte contre les désastres sociaux et<br> environnementaux provoqués par la production massive d’appareils<br> neufs.<br><br>Fixlig vous permet de défier tes amis pour savoir qui sera le<br> meilleur réparateur
-                                    de ton entourage. tu gagnes des points<br> quand tu aides tes proches.
-                                </p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <button><p>Comment gagner des points ?</p></button>
-                        <ol class="FAQText">
-                            <li>
-                                <p>Chaque fois que tu arrives à résoudre un problème informatique<br> de l’un de tes proches, tu gagnes un point. </p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <button><p>Comment confirmer que j’ai aidé quelqu’un ?</p></button>
-                        <ol class="FAQText">
-                            <li>
-                                <p>Je signale à la plateforme que j’ai effectué une tâche.<br>Je renseigne l’adresse email de la personne que j’ai aidé.<br>Elle reçoit un lien cliquable pour confirmer qu’elle a bénéficié de mon aide.
-                                    <br>Dès que le bénéficiaire clique sur le lien, mon intervention est<br>validée.
-                                </p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <button><p>Comment affronter ses amis ?</p></button>
-                        <ol class="FAQText">
-                            <li>
-                                <p>tu pourra ajouter tes amis à ton réseau afin de les affronter<br>pour savoir lequel d’entre vous est le meilleur fixer. Chaque mois,<br>le meilleur recevra le badge de héros du mois.</p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <button><p>Qu’est-ce que le héros du mois ?</p></button>
-                        <ol class="FAQText">
-                            <li>
-                                <p>Le badge de héros du mois sera attribué à la personne qui aura<br>aidé le plus de proches, c’est-à-dire qui aura reçu le plus de points.</p>
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <button><p>Y a-t-il d’autres badges à obtenir ?</p></button>
-                        <ol class="FAQText">
-                            <li>
-                                <p>Oui. Il existe plusieurs badges selon les services que tu a<br>effectué.</p>
-                            </li>
-                        </ol>
-                    </li>
-                </ol>
+                <div class="accordionWrapper">
+                    <button class="accordion"><p>Qu’est-ce que FixLig ?</p> <i id="arrow" class="fas "></i></button>
+                    <div class="panel">
+                        <p>
+                            Fixlig est une communauté d’amateurs qui réparent ou optimisent les outils informatiques de leurs proches. Véritables héros, ils contribuent ainsi à l’allongement de la durée de vie de ces appareils, et donc à la lutte contre les désastres sociaux et
+                            environnementaux provoqués par la production massive d’appareils neufs.<br>Fixlig te permet de défier tes amis pour savoir qui sera le meilleur réparateur de ton entourage. Tu gagnes des points quand
+                            tu aides tes proches.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordionWrapper">
+                    <button class="accordion"><p>Comment gagner des points ?</p></button>
+                    <div class="panel">
+                        <p>Chaque fois que tu arrives à résoudre un problème informatique de l’un de tes proches, tu gagnes un point. </p>
+                    </div>
+                </div>
+
+                <div class="accordionWrapper">
+                    <button class="accordion"><p>Comment confirmer que j’ai aidé quelqu’un ?</p></button>
+                    <div class="panel">
+                        <p>Je signale à la plateforme que j’ai effectué une tâche.<br> Je renseigne l’adresse email de la personne que j’ai aidé.<br> Elle reçoit un lien cliquable pour confirmer qu’elle a bénéficié de mon aide.<br> Dès que le bénéficiaire
+                            clique sur le lien, mon intervention est validée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordionWrapper">
+                    <button class="accordion"><p>Comment affronter ses amis ?</p></button>
+                    <div class="panel">
+                        <p>Tu pourras ajouter tes amis à ton réseau afin de les affronter pour savoir lequel d’entre vous est le meilleur fixer. Chaque mois, le meilleur recevra le badge de héros du mois.</p>
+                    </div>
+                </div>
+
+                <div class="accordionWrapper">
+                    <button class="accordion"><p>Qu’est-ce que le héros du mois ?</p></button>
+                    <div class="panel">
+                        <p>Le badge de héros du mois sera attribué à la personne qui aura aidé le plus de proches, c’est-à-dire qui aura reçu le plus de points.</p>
+                    </div>
+                </div>
+
+                <div class="accordionWrapper">
+                    <button class="accordion"><p>Y a-t-il d'autres badges à obtenir ?</p></button>
+                    <div class="panel">
+                        <p>Oui. Il existe plusieurs badges selon les services que tu a effectué.</p>
+                    </div>
+                </div>
             </div>
+
+            <script src="./assets/js/accordion.js"></script>
+
         </div>
+
+    </div>
+
+    </div>
     </div>
 </body>
 
